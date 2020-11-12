@@ -1,4 +1,4 @@
-ntro Options
+% Intro Options
 \ProvidesClass{hieudo-build}[2016/07/26 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
@@ -37,15 +37,15 @@ ntro Options
 % Date format
 \DTMnewdatestyle{mylastupdate}{%
   \renewcommand*{\DTMdisplaydate}[4]{\DTMtwodigits{##2}.\DTMtwodigits{##3}.##1}\color{date}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-ExtraLight}\fontsize{10pt}{10pt}\selectfont%
-    \renewcommand*{\DTMDisplaydate}{\DTMdisplaydate}%
+  \renewcommand*{\DTMDisplaydate}{\DTMdisplaydate}%
 }
 
 % Name command
 \newcommand{\namesection}[2]{
-        \hspace{-1.7em}\raggedright{\parbox[b]{30em}{\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{58pt}{0cm}\selectfont #1}}
-            \hfill
-                \raggedleft{\parbox[b]{12em}{\color{headings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #2}}
-                    \vspace{2.2em} 
+	\hspace{-1.7em}\raggedright{\parbox[b]{30em}{\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{58pt}{0cm}\selectfont #1}}
+    \hfill
+    \raggedleft{\parbox[b]{12em}{\color{headings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #2}}
+   	\vspace{2.2em} 
 }
 \titlespacing{\section}{0pt}{0pt}{5pt}
 
@@ -64,11 +64,11 @@ ntro Options
 
 % Jobtitle command
 \newcommand{\workplace}[2]{
-    \color{subheadings}\raggedright
-    \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont
-    \hfill
-    \color{subheadings}\raggedleft
-    \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{12pt}{12pt}\selectfont\bfseries {#2} \normalfont
+\color{subheadings}\raggedright
+\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont
+\hfill
+\color{subheadings}\raggedleft
+\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{12pt}{12pt}\selectfont\bfseries {#2} \normalfont
 }
 \titlespacing{\section}{0pt}{0pt}{5pt}
 
@@ -77,7 +77,7 @@ ntro Options
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
 % Positions command
-\newcommand{\position}[2]{  \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{13pt}\selectfont {#1}\normalfont
+\newcommand{\position}[2]{	\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{13pt}\selectfont {#1}\normalfont
 \hfill
 \color{subheadings}\raggedleft\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{13pt}\selectfont {#2\\}\normalfont
 }
@@ -92,4 +92,3 @@ ntro Options
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
-
